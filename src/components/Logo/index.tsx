@@ -5,11 +5,15 @@ import BeemaLogoImg from '../../assets/logo/logo_croped.png';
 
 import { LogoContainer, LogoImg, LogoText } from './styles';
 
-export const Logo: React.FC = () => {
+interface IProps {
+  inline: boolean;
+}
+
+export const Logo: React.FC<IProps> = ({ inline }) => {
   return (
-    <LogoContainer>
-      <LogoImg src={BeemaLogoImg} />
-      <LogoText>Beema</LogoText>
+    <LogoContainer inline={inline}>
+      <LogoImg inline={inline} src={BeemaLogoImg} />
+      <LogoText inline={inline}>Beema</LogoText>
     </LogoContainer>
   );
 };

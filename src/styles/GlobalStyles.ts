@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   
@@ -6,6 +6,7 @@ export default createGlobalStyle`
     --primary: #00B997;
     --white: #FFFFFF;
     --black: #000000;
+    --light-gray: #7A7A7A;
   }
   * {
     margin: 0;
@@ -21,4 +22,11 @@ export default createGlobalStyle`
     background: var(--white);
     font-family: Roboto, sans-serif;
   }
+`;
+
+export const SectionTitle = styled.h1`
+  font-size: 34px;
+  font-weight: bold;
+  color: var(--black);
+  padding: 3rem 0 5rem 0;
 `;

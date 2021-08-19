@@ -12,7 +12,7 @@ export const DownArrow: React.FC = () => {
           duration: 0.3,
         },
       }}
-      whileTap={{ filter: 'brightness(0.9)', scale: 1.01 }}
+      whileTap={{ filter: 'brightness(0.9)', scale: 0.98 }}
     >
       <ArrowIcon />
     </ArrowContainer>
