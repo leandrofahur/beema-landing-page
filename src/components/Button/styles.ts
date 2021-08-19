@@ -9,5 +9,6 @@ export const ButtonWrapper = styled(motion.button)`
   color: var(--white);
   font-weight: bold;
   font-size: 16px;
+  outline: none;
   border: none;
 `;

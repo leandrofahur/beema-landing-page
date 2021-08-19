@@ -6,7 +6,13 @@ import { Marginer } from '../Marginer';
 import { Button } from '../../components/Button';
 
 // styles:
-import { HeroContainer, BgFilter, MotivationalText } from './styles';
+import {
+  HeroContainer,
+  BgFilter,
+  MotivationalText,
+  DownArrowContainer,
+} from './styles';
+import { DownArrow } from '../../components/DownArrow';
 
 export const Hero: React.FC = () => {
   return (
@@ -19,6 +25,9 @@ export const Hero: React.FC = () => {
         <MotivationalText>From The Best in The Industry</MotivationalText>
         <Marginer direction='vertical' margin='3rem' />
         <Button>Start Your Project</Button>
+        <DownArrowContainer>
+          <DownArrow />
+        </DownArrowContainer>
       </BgFilter>
     </HeroContainer>
   );
