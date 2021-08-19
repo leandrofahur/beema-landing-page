@@ -16,3 +16,10 @@ export const BgFilter = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+
+export const MotivationalText = styled.h1`
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--white);
+`;
