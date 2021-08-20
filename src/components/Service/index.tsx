@@ -1,4 +1,5 @@
 import { Marginer } from '../../layouts/Marginer';
+
 import {
   DescriptionContainer,
   ServiceContainer,
@@ -22,12 +23,21 @@ export const Service: React.FC<IProps> = ({
 }) => {
   return (
     <ServiceContainer isReversed={isReversed}>
-      <DescriptionContainer>
+      <DescriptionContainer
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <Title>{title}</Title>
         <Marginer direction='vertical' margin='2rem' />
         <Details>{details}</Details>
       </DescriptionContainer>
-      <ServiceImg src={imgUrl} />
+      <ServiceImg
+        src={imgUrl}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      />
     </ServiceContainer>
   );
 };

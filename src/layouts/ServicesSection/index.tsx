@@ -35,7 +35,13 @@ export const ServicesSection: React.FC = () => {
 
   return (
     <ServicesContainer name='servicesSection'>
-      <SectionTitle>Best Software Quality</SectionTitle>
+      <SectionTitle
+        initial={{ x: -10, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        Best Software Quality
+      </SectionTitle>
       <Marginer direction='vertical' margin='7rem' />
       {servicesList.map((service) => {
         return (

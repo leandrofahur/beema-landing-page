@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import { motion } from 'framer-motion';
 
 export default createGlobalStyle`
   
@@ -24,7 +25,7 @@ export default createGlobalStyle`
   }
 `;
 
-export const SectionTitle = styled.h1`
+export const SectionTitle = styled(motion.h1)`
   font-size: 34px;
   font-weight: bold;
   color: var(--black);

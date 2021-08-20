@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 interface IProps {
   isReversed: boolean;
@@ -11,16 +12,16 @@ export const ServiceContainer = styled.div<IProps>`
   margin-bottom: 5rem;
 `;
 
-export const ServiceImg = styled.img`
+export const ServiceImg = styled(motion.img)`
   width: 22em;
   height: 17em;
 `;
 
-export const DescriptionContainer = styled.div`
+export const DescriptionContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 60%;
+  max-width: 55%;
 `;
 
 export const Title = styled.h2`
