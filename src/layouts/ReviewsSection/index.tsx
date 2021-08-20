@@ -9,6 +9,7 @@ export const ReviewsSection: React.FC = () => {
     <ReviewsContainer name='reviewsSection'>
       <SectionTitle>What Our Clients Are Saying About Us</SectionTitle>
       <Marginer direction='vertical' margin='3rem' />
+      <ReviewCard />
     </ReviewsContainer>
   );
 };

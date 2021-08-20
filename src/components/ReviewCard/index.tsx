@@ -2,7 +2,12 @@ import React from 'react';
 
 import { ReviewCardsContainer } from './styles';
 
-const ReviewCard: React.FC = () => {
+interface IProps {
+  content?: string;
+  imgUrl?: string;
+}
+
+const ReviewCard: React.FC<IProps> = ({ content, imgUrl }) => {
   return <ReviewCardsContainer>Card</ReviewCardsContainer>;
 };
 
